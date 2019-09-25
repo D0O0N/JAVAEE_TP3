@@ -50,6 +50,25 @@ public class SinglePlayerGame {
         public void nextTurn(){
             nbTour += 1;
             nbBoule = 0;
+            GameStatus.add(new tour());
+        }
+        
+        public void majScore(){
+            // On met à jour les strikes précedent
+            if (nbTour > 1){
+                if (GameStatus.get(nbTour-1).info[1] == 2){
+                    
+                }
+            }
+            else if (nbTour > 0 && nbBoule == 1){
+                if (GameStatus.get(nbTour-1).info[1] == 2){
+                    
+                }
+            }
+            if (nbTour > 0){
+                
+            }
+            // maj score actuel
         }
 
 	/**
